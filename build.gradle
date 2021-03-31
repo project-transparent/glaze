@@ -19,6 +19,8 @@ allprojects {
         }
 
         dependencies {
+            implementation 'org.transparent:lucent:1.0.1'
+            implementation 'org.transparent:eureka:1.0.0'
             implementation 'org.transparent:interlucent:1.0.0'
         }
     }
@@ -27,7 +29,8 @@ allprojects {
 archivesBaseName = 'glaze-all'
 
 def modules = [
-        'glaze-optional', 'glaze-extension'
+        'glaze-optional',
+        'glaze-extension'
 ]
 
 dependencies {
