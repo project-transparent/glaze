@@ -1,12 +1,37 @@
 plugins {
-    id 'java'
-    id 'org.transparent.diamond' version '1.0.0'
+    id 'org.transparent.diamond' version '1.0.0' apply false
 }
 
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
+allprojects {
+    apply plugin: 'java'
 
-group = 'org.transparent.glaze'
-archivesBaseName = 'core'
-version = '1.0.0'
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 
+    group = 'org.transparent'
+    version = '1.0.0'
+
+    if (it != project(':glaze-annotations')) {
+        apply plugin: 'org.transparent.diamond'
+
+        repositories {
+            mavenLocal()
+        }
+
+        dependencies {
+            implementation 'org.transparent:interlucent:1.0.0'
+        }
+    }
+}
+
+archivesBaseName = 'glaze-all'
+
+def modules = [
+        'glaze-optional', 'glaze-extension'
+]
+
+dependencies {
+    for (def module : modules) {
+        implementation project(":$module")
+    }
+}

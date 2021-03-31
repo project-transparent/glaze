@@ -6,3 +6,7 @@ pluginManagement {
 }
 
 rootProject.name = 'glaze'
+include 'glaze-annotations'
+include 'glaze-optional'
+include 'glaze-extension'
+
