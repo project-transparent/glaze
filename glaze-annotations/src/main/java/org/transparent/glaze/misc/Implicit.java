@@ -15,8 +15,7 @@ import org.transparent.glaze.annotations.Self;
  */
 public final class Implicit {
     /**
-     * Throws {@link UnsupportedOperationException} when called as this class
-     * is never meant to be instantiated.
+     * @throws UnsupportedOperationException when instantiated
      */
     private Implicit() {
         throw new UnsupportedOperationException();

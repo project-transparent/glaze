@@ -1,5 +1,5 @@
 plugins {
-    id 'org.transparent.diamond' version '1.0.0' apply false
+    id 'org.transparent.diamond' version '1.1.0' apply false
 }
 
 allprojects {
@@ -19,7 +19,7 @@ allprojects {
         }
 
         dependencies {
-            implementation 'org.transparent:lucent:1.0.1'
+            implementation 'org.transparent:lucent:1.1.0'
             implementation 'org.transparent:eureka:1.0.0'
             implementation 'org.transparent:interlucent:1.0.0'
         }

@@ -13,6 +13,7 @@ public class OptionalValidator extends LucentBaseValidator {
 
     @Override
     public boolean validateMethod(JCMethodDecl method) {
-        return Annotations.isAnnotated(method, Optional.class);
+        return method.params.stream()
+                .anyMatch(this::validateParameter);
     }
 }

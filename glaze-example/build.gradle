@@ -1,0 +1,6 @@
+archivesBaseName = 'example'
+
+dependencies {
+    implementation project(':glaze-annotations')
+    annotationProcessor project(':')
+}
