@@ -4,6 +4,8 @@
 
 ## Overview
 
+Some may recognize Java as a very verbose language, and so to show off Project Transparent's libraries, we created this annotation library alongside them to help reduce the amount of boilerplate in your code. [Project Lombok](https://github.com/rzwitserloot/lombok) inspired this project heavily, but we attempt to offer different, more experimental utilities in less code.
+
 ### Requirements
 Glaze is designed to use JDK 8 but supports later versions, such versions may be unstable with this project at the moment.
 
