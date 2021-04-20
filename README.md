@@ -14,5 +14,5 @@ Glaze is designed to use JDK 8 but supports later versions, such versions may be
 3. Add `mavenLocal()` to your repositories.
 4. Add `compileOnly 'org.transparent:glaze-annotations:<version>'` to your dependencies.
 5. Add either of the following to your dependencies: 
-  - `annotationProcessor 'org.transparent:glaze-<module>:<version>'` (Individual module)
-  - `annotationProcessor 'org.transparent:glaze-all:<version>'` (All modules)
+    - `annotationProcessor 'org.transparent:glaze-<module>:<version>'` (Individual module)
+    - `annotationProcessor 'org.transparent:glaze-all:<version>'` (All modules)
